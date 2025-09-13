@@ -1,0 +1,46 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f0f4ff;
+}
+
+/* --- CSS Transitions & Animations --- */
+
+/* Button hover with transition */
+.fancy-btn {
+  background: #6200ea;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fancy-btn:hover {
+  background: #3700b3;
+  transform: scale(1.1);
+}
+
+/* Animated box */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 40px auto;
+  border-radius: 12px;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+/* Keyframe animation for bounce */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+/* Trigger class for animation */
+.bounce {
+  animation: bounce 1s ease forwards;
+}
